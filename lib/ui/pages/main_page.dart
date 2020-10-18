@@ -10,14 +10,16 @@ class _MainPageState extends State<MainPage> {
   int bottomNavbarIndex = 0;
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
-        statusBarColor: Colors.blue[700],
+        statusBarColor: blueColor,
       ),
       child: Scaffold(
         body: Stack(
           children: [
             PageView(
+              physics: NeverScrollableScrollPhysics(),
               controller: pageController,
               children: [
                 HomePage(),
@@ -30,8 +32,9 @@ class _MainPageState extends State<MainPage> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.shifting,
-          selectedItemColor: Colors.blue[700],
-          unselectedItemColor: Colors.grey[400],
+          backgroundColor: whiteColor,
+          selectedItemColor: blueColor,
+          unselectedItemColor: greyColor,
           showSelectedLabels: false,
           showUnselectedLabels: false,
           onTap: (index) {
@@ -44,36 +47,28 @@ class _MainPageState extends State<MainPage> {
             BottomNavigationBarItem(
               icon: Icon(
                 MdiIcons.home,
-                color: bottomNavbarIndex == 0
-                    ? Colors.blue[700]
-                    : Colors.grey[400],
+                color: bottomNavbarIndex == 0 ? blueColor : greyColor,
               ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                MdiIcons.clipboard,
-                color: bottomNavbarIndex == 1
-                    ? Colors.blue[700]
-                    : Colors.grey[400],
+                MdiIcons.bagPersonal,
+                color: bottomNavbarIndex == 1 ? blueColor : greyColor,
               ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 MdiIcons.barley,
-                color: bottomNavbarIndex == 2
-                    ? Colors.blue[700]
-                    : Colors.grey[400],
+                color: bottomNavbarIndex == 2 ? blueColor : greyColor,
               ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 MdiIcons.alien,
-                color: bottomNavbarIndex == 3
-                    ? Colors.blue[700]
-                    : Colors.grey[400],
+                color: bottomNavbarIndex == 3 ? blueColor : greyColor,
               ),
               label: 'Home',
             ),

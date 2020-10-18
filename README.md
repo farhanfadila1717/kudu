@@ -1,16 +1,17 @@
-# kudu
+# KUDU
 
-A new Flutter project.
+Aplikasi pencatatan kegiatan sehari-hari
+dengan database local (hive).
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Fitur Apliklasi
 
-A few resources to get you started if this is your first Flutter project:
+- Pencatatan Aktivitas.
+- Tidak perlu koneksi(offline).
+- Pemantau usia tanamanan (next feature).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screen Capture Aplication
+<img src="ss_splash.png" width="200"> &nbsp;
+<img src="ss_home.png" width="200"> &nbsp;
+

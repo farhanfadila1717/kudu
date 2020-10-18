@@ -1,17 +1,70 @@
 part of 'shared.dart';
 
 // NOTE: Default Color
-Color blueColor = Colors.blue[700];
-Color greyColor = Colors.grey[100];
+Color blueColor = Color(0xFF2451C6);
+Color greyColor = Color(0xFFC4C4C4);
 Color pinkColor = Colors.pink[400];
-Color purpleColor = Colors.purple[800];
+Color purpleColor = Colors.purple[600];
 Color orangeColor = Colors.orange[600];
 Color whiteColor = Colors.white;
+Color blackColor = Color(0xFF212121);
+
+// NOTE: Default Edge Insets
+EdgeInsets edgeInsetsAll24 = EdgeInsets.all(
+  getSizeScreenWidth(24),
+);
+EdgeInsets edgeInsetsH24 = EdgeInsets.symmetric(
+  horizontal: getSizeScreenWidth(24),
+);
+EdgeInsets edgeInsetsV24 = EdgeInsets.symmetric(
+  vertical: getSizeScreenWidth(24),
+);
+EdgeInsets edgeInsetsAll20 = EdgeInsets.all(
+  getSizeScreenWidth(20),
+);
+EdgeInsets edgeInsetsH20 = EdgeInsets.symmetric(
+  horizontal: getSizeScreenWidth(20),
+);
+EdgeInsets edgeInsetsV20 = EdgeInsets.symmetric(
+  vertical: getSizeScreenWidth(20),
+);
+EdgeInsets edgeInsetsAll16 = EdgeInsets.all(
+  getSizeScreenWidth(16),
+);
+EdgeInsets edgeInsetsH16 = EdgeInsets.symmetric(
+  horizontal: getSizeScreenWidth(16),
+);
+EdgeInsets edgeInsetsV16 = EdgeInsets.symmetric(
+  vertical: getSizeScreenWidth(16),
+);
+EdgeInsets edgeInsetsAll10 = EdgeInsets.all(
+  getSizeScreenWidth(10),
+);
+EdgeInsets edgeInsetsH10 = EdgeInsets.symmetric(
+  horizontal: getSizeScreenWidth(10),
+);
+EdgeInsets edgeInsetsV10 = EdgeInsets.symmetric(
+  vertical: getSizeScreenWidth(10),
+);
+
+// NOTE: Default Border Radius
+BorderRadius borderRadius6 = BorderRadius.circular(
+  getSizeScreenWidth(6),
+);
+BorderRadius borderRadius8 = BorderRadius.circular(
+  getSizeScreenWidth(8),
+);
+BorderRadius borderRadius10 = BorderRadius.circular(
+  getSizeScreenWidth(10),
+);
+BorderRadius borderRadius16 = BorderRadius.circular(
+  getSizeScreenWidth(16),
+);
 
 // NOTE: Default Box Shadow
 List<BoxShadow> boxShadow = [
   BoxShadow(
-    color: greyColor,
+    color: greyColor.withOpacity(0.2),
     offset: Offset(getSizeScreenHeight(10), getSizeScreenWidth(10)),
     blurRadius: getSizeScreenHeight(10),
   ),
@@ -48,7 +101,7 @@ TextStyle whiteText = GoogleFonts.rubik(
   fontSize: 14,
   color: whiteColor,
 );
-TextStyle whiteNumber = GoogleFonts.robotoSlab(
+TextStyle whiteNumber = GoogleFonts.roboto(
   fontSize: 14,
   color: whiteColor,
 );
@@ -56,7 +109,7 @@ TextStyle greyText = GoogleFonts.rubik(
   fontSize: 14,
   color: greyColor,
 );
-TextStyle greyNumber = GoogleFonts.robotoSlab(
+TextStyle greyNumber = GoogleFonts.roboto(
   fontSize: 14,
   color: greyColor,
 );
@@ -64,7 +117,15 @@ TextStyle blueText = GoogleFonts.rubik(
   fontSize: 14,
   color: blueColor,
 );
-TextStyle blueNumber = GoogleFonts.robotoSlab(
+TextStyle blueNumber = GoogleFonts.roboto(
   fontSize: 14,
   color: blueColor,
+);
+TextStyle blackText = GoogleFonts.rubik(
+  fontSize: 14,
+  color: blackColor,
+);
+TextStyle blackNumber = GoogleFonts.roboto(
+  fontSize: 14,
+  color: blackColor,
 );
