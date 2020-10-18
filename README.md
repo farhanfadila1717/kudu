@@ -8,7 +8,7 @@ dengan database local (hive).
 
 - Pencatatan Aktivitas.
 - Tidak perlu koneksi(offline).
-- Pemantau usia tanamanan (next feature).
+- Pemantau usia tanaman(next feature).
 
 
 ## Screen Capture Aplication
