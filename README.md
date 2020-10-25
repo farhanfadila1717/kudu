@@ -14,4 +14,5 @@ dengan database local (hive).
 ## Screen Capture Aplication
 <img src="ss_splash.jpg" width="200"> &nbsp;
 <img src="ss_home.png" width="200"> &nbsp;
+<img src="ss_success.png" width="200"> &nbsp;
 
