@@ -48,6 +48,9 @@ EdgeInsets edgeInsetsV10 = EdgeInsets.symmetric(
 );
 
 // NOTE: Default Border Radius
+BorderRadius borderRadius4 = BorderRadius.circular(
+  getSizeScreenWidth(4),
+);
 BorderRadius borderRadius6 = BorderRadius.circular(
   getSizeScreenWidth(6),
 );
